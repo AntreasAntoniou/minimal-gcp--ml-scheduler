@@ -3,7 +3,7 @@
 
 1. Get a target runner script, a list of experiment configs, and a list of hardware requirement configurations, i.e.
 ```python
-exp_configs: List[dict], resource_configs: List[dict], runner_script: str = /target_codebase/runner.py
+exp_configs: List[Dict], resource_configs: List[Dict], runner_script: str = /target_codebase/runner.py
 ```
 2. For each experiment config + resource config pair launch an instance that has the right requirements.
 3. Pass to the instance during launch a startup script that runs the `runner_script`.
